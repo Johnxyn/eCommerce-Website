@@ -2074,3 +2074,19 @@ footer {
 /**
  * responsive larger than 768px screen
  */
+
+@media (min-width: 768px) {
+  /**
+   * #CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography 
+     */
+
+    --fs-1: 2.375rem;
+
+  }
+}
