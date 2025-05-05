@@ -2674,7 +2674,6 @@ footer {
 
   .sidebar {
     --fs-5: 0.941rem;
-
     position: sticky;
     top: 30px;
     left: 0;
