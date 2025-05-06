@@ -2706,7 +2706,7 @@ footer {
   }
 
   .product-minimal .product-showcase {
-    min-width: calc(33.33% - 14px);
+    /* min-width: calc(33.33% - 14px); */
     width: calc(33.33% - 14px);
     flex-grow: 1;
   }
