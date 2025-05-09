@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 @codewithsadee 
+ * copyright 2024 @Johnxyn
  */
 
 
@@ -1251,7 +1251,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: var(--salmon-pink);
   padding: 8px 15px;
   color: var(--white);
-  //font-weight: var(--fs-9);
+  font-weight: var(--fs-9);
   font-weight: var(--weight-700);
   text-transform: uppercase;
   border-radius: var(--border-radius-md);
@@ -1501,9 +1501,6 @@ body::-webkit-scrollbar-thumb:hover {
 .product-grid del {
   color: var(--sonic-silver);
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -2062,6 +2059,9 @@ footer {
 }
 
 
+
+
+
 /**
  * responsive larger than 570px screen
  */
@@ -2182,6 +2182,9 @@ footer {
   }
 
 }
+
+
+
 
 
 /**
@@ -2364,6 +2367,10 @@ footer {
 
 }
 
+
+
+
+
 /**
  * responsive larger than 1024px screen
  */
@@ -2395,17 +2402,21 @@ footer {
     max-width: 980px;
   }
 
+
+
   /**
-       * #NOTIFICATION TOAST 
-       */
+   * #NOTIFICATION TOAST 
+   */
 
   .notification-toast {
     bottom: 30px;
   }
 
+
+
   /**
-  * #HEADER 
-  */
+   * #HEADER 
+   */
 
   .header-social-container {
     display: flex;
@@ -2605,8 +2616,8 @@ footer {
 
 
   /**
-    * #BANNER 
-    */
+   * #BANNER 
+   */
 
   .banner {
     margin-top: 0;
@@ -2622,7 +2633,11 @@ footer {
   }
 
   .banner-subtitle {
-    --fs-7: 1.625rem
+    --fs-7: 1.625rem;
+  }
+
+  .banner-text {
+    --fs-7: 1.375rem;
   }
 
   .banner-btn {
@@ -2630,12 +2645,13 @@ footer {
   }
 
 
-  /**
-    * #CATEGORY 
-    */
 
-  .category-item-container .category-item {
-    min-width: calc(33.3% - 20px);
+  /**
+   * #CATEGORY 
+   */
+
+  .category-item {
+    min-width: calc(33.33% - 20px);
   }
 
   .category-img-box {
@@ -2643,10 +2659,10 @@ footer {
   }
 
 
+
   /**
    * #PRODUCT 
    */
-
 
   .product-container .container {
     position: relative;
@@ -2699,7 +2715,6 @@ footer {
     gap: 10px;
   }
 
-
   .product-minimal .showcase-container {
     padding: 2px;
   }
@@ -2712,9 +2727,11 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 
+
+
   /**
-       * #TESTIMONIALS, CTA & SERVICE 
-       */
+   * #TESTIMONIALS, CTA & SERVICE 
+   */
 
   .testimonials-box {
     display: flex;
@@ -2729,9 +2746,8 @@ footer {
 
   .testimonial,
   .cta-container {
-    /* min-width: calc(50% - 15px); */
-    /* width: calc(50% - 15px); */
-    flex-basis: 45%;
+    min-width: calc(50% - 15px);
+    width: calc(50% - 15px);
     margin-bottom: 0;
   }
 
@@ -2749,6 +2765,12 @@ footer {
     min-width: 20%;
   }
 
+
+
+  /**
+   * #BLOG
+   */
+
   .blog-card {
     min-width: calc(33.33% - 20px);
   }
@@ -2756,6 +2778,7 @@ footer {
   .blog-title {
     --fs-5: 1rem;
   }
+
 
 
   /**
@@ -2777,6 +2800,10 @@ footer {
 
 }
 
+
+
+
+
 /**
  * responsive larger than 1200px screen
  */
@@ -2784,28 +2811,38 @@ footer {
 @media (min-width: 1200px) {
 
   /**
-       * #REUSED STYLE 
-       */
+   * #REUSED STYLE 
+   */
 
   .container {
     max-width: 1200px;
   }
 
+
+
   /**
-           * #HEADER
-           */
+   * #HEADER
+   */
 
   .desktop-menu-category-list {
     gap: 45px;
   }
 
+
+
+  /**
+   * #BANNER
+   */
+
   .slider-item:last-child .banner-img {
     object-position: top;
   }
 
+
+
   /**
-     * #CATEGORY
-     */
+   * #CATEGORY
+   */
 
   .category-item {
     min-width: calc(25% - 22.5px);
@@ -2815,9 +2852,11 @@ footer {
     --fs-9: 0.824rem;
   }
 
+
+
   /**
-     * #PRODUCT
-     */
+   * #PRODUCT
+   */
 
   .product-featured .showcase>div {
     min-width: calc(50% - 10px);
@@ -2831,13 +2870,8 @@ footer {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  /**
-       * #TESTIMONIALS, CTA, SERVICE
-       */
-
-
-
-
-
-
 }
+
+/**
+   * #TESTIMONIALS, CTA, SERVICE
+   */
