@@ -2694,7 +2694,7 @@ footer {
   }
 
   .sidebar-close-btn {
-    display: none;
+    /* display: none; */
   }
 
   .product-box {
@@ -2870,8 +2870,95 @@ footer {
     grid-template-columns: repeat(4, 1fr);
   }
 
+  /**
+     * #TESTIMONIALS, CTA, SERVICE
+     */
+
+
+  .testimonial,
+  .service {
+    min-width: calc(25% - 20px);
+    width: calc(25% - 20px);
+  }
+
+  .cta-container {
+    min-width: calc(50% - 20px);
+    width: calc(50% - 20px);
+    aspect-ratio: unset;
+  }
+
+  .service-container {
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 30px;
+  }
+
+  .service-item {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  /**
+    * #BLOG
+     */
+
+  .blog {
+    margin-bottom: 50px;
+  }
+
+  .blog-card {
+    min-width: calc(25% - 22.5px);
+  }
+
+  /**
+       * #FOOTER
+       */
+
+  footer {
+    padding-top: 50px;
+  }
+
+  .footer-category {
+    margin-bottom: 50px;
+    padding-bottom: 35px;
+  }
+
+  .footer-nav {
+    padding-bottom: 50px;
+  }
 }
 
 /**
-   * #TESTIMONIALS, CTA, SERVICE
-   */
+ * responsive larger than 1400px screen
+ */
+
+@media (min-width:1400px) {
+  /**
+       * #BASE 
+       */
+
+  html {
+    font-size: 18px;
+  }
+
+  /**
+     * #REUSED STYLE 
+     */
+
+  .container {
+    max-width: 1350px;
+  }
+
+  /**
+       * #BANNER
+       */
+
+  .slider-item {
+    height: 450px;
+  }
+
+  .banner-content {
+    left: 110px;
+    max-width: 460px;
+  }
+}
